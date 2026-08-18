@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>VeriText — página de prueba</title>
+<style>
+  body { max-width: 680px; margin: 0 auto; padding: 40px 24px 120px;
+         font: 16px/1.6 system-ui, sans-serif; color: #16141f; background: #fff; }
+  h1 { font-size: 22px; }
+  .lede { color: #5f5a75; }
+  section { margin: 48px 0; padding-top: 24px; border-top: 1px solid #e3dff2; }
+  h2 { font-size: 15px; letter-spacing: .02em; color: #4a2fd1; margin: 0 0 4px; }
+  .expect { font: 500 13px/1.4 ui-monospace, monospace; color: #b8632f; margin: 0 0 18px; }
+  footer { margin-top: 64px; font-size: 13px; color: #5f5a75; border-top: 1px solid #e3dff2; padding-top: 18px; }
+</style>
+</head>
+<body>
+<h1>VeriText — página de prueba</h1>
+<p class="lede">Cinco pasajes con la puntuación que el motor da en Node. Analiza esta
+página con VeriText y compara: los dos primeros bloques de cada idioma son registro de
+modelo y deben marcarse; los demás son humanos y deben quedar limpios.</p>
+
+    <section>
+      <h2>A — Registro de modelo, español</h2>
+      <p class="expect" data-expect="75">Esperado: <b>75%</b> · debe marcarse · idioma es</p>
+      <p>En el mundo actual, la gestión del tiempo se ha convertido en una habilidad fundamental para los profesionales de cualquier sector. Es importante destacar que la productividad no solo consiste en trabajar más rápido, sino también en trabajar de forma más inteligente. Además, un enfoque integral de la planificación puede fomentar una relación más equilibrada con el trabajo.</p>
+      <p>Asimismo, aprovechar herramientas digitales robustas permite optimizar los flujos de trabajo, priorizar las tareas relevantes y potenciar el rendimiento del equipo. Cabe señalar que este panorama subraya el papel crucial que desempeña la planificación intencionada en el éxito a largo plazo.</p>
+      <p>En conclusión, al profundizar en los entresijos de la productividad personal, los profesionales pueden navegar el entorno laboral moderno con confianza, claridad y determinación. Sin duda, se trata de un ámbito amplio y polifacético que conviene explorar con detenimiento.</p>
+    </section>
+
+    <section>
+      <h2>B — Humano informal, español</h2>
+      <p class="expect" data-expect="14">Esperado: <b>14%</b> · NO debe marcarse · idioma es</p>
+      <p>Probé lo del Pomodoro tres semanas y nada, no me cuadró. Los 25 minutos o se me hacen cortísimos o eternos, depende del día. Para picar código vale, pero para escribir ni de coña.</p>
+      <p>Lo que sí me funcionó fue una tontería: no abro Slack hasta las once. Ya está. Mi jefa lo notó a las dos semanas y me preguntó qué había cambiado, y fue un poco incómodo porque la respuesta honesta era "he dejado de leerte por las mañanas".</p>
+      <p>En fin. Hay días que hasta las tres no hago nada de provecho y bueno, ya lo he asumido. No todo tiene que ser un método con nombre, libro y pódcast.</p>
+    </section>
+
+    <section>
+      <h2>C — Periodismo humano, español</h2>
+      <p class="expect" data-expect="19">Esperado: <b>19%</b> · NO debe marcarse · idioma es</p>
+      <p>El Ayuntamiento aprobó el martes la partida de 1,4 millones para la reforma del mercado central, con los votos de PSOE y Compromís y la abstención del PP. Las obras arrancan en octubre y durarán catorce meses.</p>
+      <p>Los 38 puestos se trasladarán a una carpa provisional en la plaza de Sant Agustí. "Nos han dado dos meses para mudarnos, y en agosto no encuentras ni transportistas", protestó Amparo Gil, que lleva 31 años en la pescadería número 12.</p>
+      <p>El concejal de Urbanismo, Joan Ribó, defendió el calendario: la cubierta tiene goteras desde 2019 y el informe técnico de febrero desaconsejaba aplazarlo otro invierno.</p>
+    </section>
+
+    <section>
+      <h2>D — Registro de modelo, inglés</h2>
+      <p class="expect" data-expect="73">Esperado: <b>73%</b> · debe marcarse · idioma en</p>
+      <p>In today's rapidly evolving digital landscape, effective time management has become a crucial skill for professionals across every industry. It is important to note that productivity is not only about working faster, but also about working smarter. Moreover, a comprehensive approach to scheduling can foster a more balanced relationship with work.</p>
+      <p>Furthermore, leveraging robust digital tools allows individuals to streamline their workflows, prioritise meaningful tasks, and unlock their full potential. It should be noted that this landscape underscores the vital role that intentional planning plays in long-term success.</p>
+      <p>Ultimately, by delving into the intricacies of personal productivity, professionals can navigate the modern workplace with confidence, clarity, and purpose. This holistic perspective is a testament to the multifaceted nature of the subject.</p>
+    </section>
+
+    <section>
+      <h2>E — Humano informal, inglés</h2>
+      <p class="expect" data-expect="15">Esperado: <b>15%</b> · NO debe marcarse · idioma en</p>
+      <p>I tried the whole Pomodoro thing for about three weeks and honestly it didn't stick. 25 minutes is either way too short or way too long depending on what I'm doing — refactoring, fine, but writing? No chance.</p>
+      <p>What actually worked was dumber: I close Slack until 11am. That's it. My manager noticed within a fortnight and asked what changed, which was awkward because the answer is "I stopped reading your messages before lunch".</p>
+      <p>Anyway. Some days I still do nothing useful until 3pm and I've made peace with that. Not every system needs a name and a book deal.</p>
+    </section>
+
+<footer>
+Página temporal para probar VeriText. Los textos A y D están escritos deliberadamente
+en el registro plano y andamiado de la salida por defecto de un modelo de lenguaje.
+Los textos B, C y E están escritos por una persona. Ninguno de estos textos describe
+hechos reales.
+</footer>
+</body>
+</html>
