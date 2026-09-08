@@ -91,6 +91,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule);
 <p><strong>Automatic and page-wide scanning never touches anything you are writing.</strong> It skips navigation, headers, footers, code blocks, forms, text boxes and editable areas, and it runs in the top frame only, not in embedded frames.</p>
 <p><strong>You can ask it to read a text box, and only then does it.</strong> Select text, or put the cursor in the field you are drafting in, and use the right-click menu or the keyboard shortcut. That single field is read at that moment, on that gesture, and the text is analysed and discarded like any other. It is the most common reason people install a detector — checking their own draft before sending it — and the alternative was sending them to a tool that uploads it.</p>
 <p>VeriText never reads a field you have not pointed at, never reads passwords, and never reads anything on a timer.</p>
+<p><strong>The writing recorder is separate, and it is off until you start it.</strong> When you press Alt+Shift+R, VeriText keeps a record of <em>how</em> text arrived in that one field — timings, sizes, pastes and pauses. It stores none of the characters you type, refuses password fields outright, shows a badge on the page for as long as it runs, and stops when you say so. The record stays in the page until you export it, and the export is written by your browser to your own downloads.</p>
 
 <h2>What VeriText stores</h2>
 <p>Only your own settings:</p>
@@ -100,6 +101,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule);
   <li>whether weaker matches are shown</li>
   <li>your chosen interface language</li>
   <li>the wrong-mark reports you choose to file, which hold the measurements of a passage and never the passage itself</li>
+  <li>a counter per site: how often you analysed it and how much was marked there. No addresses, no titles, no text</li>
   <li>the list of sites you have switched on or off</li>
 </ul>
 <p>These are kept in your browser's extension storage. If you have browser sync turned on in your browser account, your browser may sync them across your own devices — that is your browser doing it, under your browser vendor's privacy policy, not VeriText sending data anywhere.</p>
